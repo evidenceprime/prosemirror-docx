@@ -2,8 +2,10 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.ts',
+  devtool: 'source-map',
+  mode: 'production',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'prosemirror-docx.js',
     library: {
       name: 'PMDocx',
@@ -21,6 +23,7 @@ module.exports = {
   },
   externals: {
     docx: 'docx',
+    'buffer-image-size': 'BufferImageSize',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],

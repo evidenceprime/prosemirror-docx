@@ -1,6 +1,6 @@
 {
   "name": "@ep/prosemirror-docx",
-  "version": "0.0.11",
+  "version": "0.0.14",
   "description": "Export from a prosemirror document to Microsoft word",
   "author": "Rowan Cockett <rowan@curvenote.com>",
   "license": "MIT",
@@ -29,7 +29,6 @@
     "build": "yarn run clean && tsc -p .;rm -rf dist/test; mv dist/src/* dist; rmdir dist/src;",
     "build:umd": "webpack --config webpack.config.js",
     "build:watch": "tsc -w -p .",
-    "prepublishOnly": "yarn build",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:clear": "jest --clearCache",
