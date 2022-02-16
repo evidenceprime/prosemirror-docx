@@ -4,9 +4,11 @@ module.exports = {
   entry: './src/index.ts',
   devtool: 'source-map',
   mode: 'production',
+  target: 'es5',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'prosemirror-docx.js',
+    chunkFormat: 'commonjs',
     library: {
       name: 'PMDocx',
       type: 'umd',
