@@ -1,6 +1,6 @@
 name: publish-npm
 trigger:
-- master
+- main
 pr: none
 
 resources:
